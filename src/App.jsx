@@ -30,7 +30,7 @@ const methods = [
   },
   {
     title: "Framework ile derleme",
-    text: "React, Vue veya benzeri bir araç kullanıyorsan önce build alır, çıkan dosyaları yayınlarsın.",
+    text: "Angular, React, Vue veya benzeri bir araç kullanıyorsan önce build alır, çıkan dosyaları yayınlarsın.",
   },
   {
     title: "Kullanıcı sayfası",
@@ -47,7 +47,7 @@ const setupSteps = [
   {
     title: "2. Git deposu başlat",
     body:
-      "Eğer `npm create vite@latest` komutu sonrası git oluşmamış ise veya kendin oluşturmak istersen terminalde proje klasöründe `git init` çalıştır. Sonra ilgili dosyaları `git add .` komutuyla commit listemize ekleyip `git commit -m \"ilk sürüm\"` ile ilk commit’i oluştur.",
+      "Eğer `npm create vite@latest` komutu sonrası git oluşmamış ise veya kendin oluşturmak istersen terminalde proje klasöründe `git init` çalıştır.",
   },
   {
     title: "3. GitHub deposu aç",
@@ -55,9 +55,9 @@ const setupSteps = [
       "GitHub üzerinde yeni bir repository oluştur. İstersen public yap, çünkü GitHub Pages rehber senaryolarında bu en yaygın akıştır.",
   },
   {
-    title: "4. Uzak bağlantıyı ekle",
+    title: "4. Değişiklikleri kaydet ve uzak bağlantıyı ekleyip gönder",
     body:
-      "Yereldeki projeyi GitHub’a bağlamak için `git remote add origin ...` komutunu kullan ve `git push -u origin main` ile gönder.",
+      "İlk olarak yaptığımız düzenlemeleri kayıt altına almak için `git add .` komutu ile commit listemize ekleyip `git commit -m \"Initial commit\"` ile ilk commit’i oluştur. Yereldeki projeyi GitHub’a bağlamak için `git remote add origin ...` komutunu kullan ve `git push -u origin main` ile gönder.",
   },
   {
     title: "5. Pages ayarını aç",
@@ -125,11 +125,11 @@ const commandBlocks = [
   },
   {
     title: "GitHub'a gönderme",
-    code: `git init\ngit add .\ngit commit -m "ilk sürüm"\ngit branch -M main\ngit remote add origin https://github.com/kullaniciadi/depo-adi.git\ngit push -u origin main`,
+    code: `git init\ngit add .\ngit commit -m "Initial commit"\ngit branch -M main\ngit remote add origin https://github.com/kullaniciadi/depo-adi.git\ngit push -u origin main`,
   },
   {
     title: "Yayın kontrolü",
-    code: `npm run build\n# GitHub > Settings > Pages > Source: GitHub Actions`,
+    code: 'GitHub > Settings > Pages > Source: GitHub Actions',
   },
 ];
 
