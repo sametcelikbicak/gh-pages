@@ -64,6 +64,11 @@ const setupSteps = [
     body:
       "Repository içinden Settings > Pages bölümüne gir. Yayın kaynağı olarak branch ve klasör seçimi yap.",
   },
+    {
+    title: "6. GitHub Actions ile otomatik deploy",
+    body:
+      "Proje ana klasöründe `.github/workflows/deploy.yml` dosyasını oluşturup içine verilen workflow kodunu yapıştır. Repo adına göre `vite.config.js` içindeki `base` değerini düzenle.",
+  },
 ];
 
 const deployOptions = [
